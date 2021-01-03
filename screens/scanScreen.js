@@ -26,7 +26,7 @@ export default class ScanScreen extends React.Component {
 
     handleBarCodeScan = async ({type,data})=>{
         var buttonState = this.state.buttonState;
-        if(buttonState==="BookId"){
+        if(buttonState==="clicked"){
           this.setState({
             scanned:true,
             scannedData : data,
